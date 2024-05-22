@@ -1,0 +1,179 @@
+body {
+  font-family: Noto Sans, Arial, sans-serif;
+}
+
+@font-face {
+  font-family: "Ustroke";
+  src: url("../fonts/Ustroke-Regular.ttf");
+}
+
+header {
+  color: rgb(255, 255, 255);
+  background: linear-gradient(90deg, #6e33d9, #fdfe8a, #ed1e90);
+  margin: 1em;
+  padding: 16px;
+  border-radius: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: inset rgba(0, 0, 0, 0.5) -3px -3px 8px,
+    inset rgba(255, 255, 255, 0.9) 3px 3px 8px,
+    rgba(0, 0, 0, 0.8) 3px 3px 8px -3px;
+}
+
+.name {
+  font-family: "Ustroke";
+  color: #000000;
+  font-size: 60px;
+  letter-spacing: 10px;
+  padding-left: 40px;
+}
+
+nav {
+  line-height: 40px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 50px;
+  align-items: center;
+  letter-spacing: 1px;
+  padding-right: 40px;
+}
+
+a {
+  font-family: "Ustroke";
+  font-size: 20px;
+  color: #000000;
+  text-decoration: none;
+}
+
+nav :hover {
+  background: linear-gradient(90deg, #6d33d92f, #fcfe8a31, #ed1e9031);
+  border-radius: 60px;
+  cursor: pointer;
+  padding-right: 8px;
+  padding-left: 8px;
+}
+
+.back {
+  background: center rgba(255, 255, 255, 0)
+    url(https://www.boredpanda.com/blog/wp-content/uploads/2016/06/Escaping-reality-with-Princess-Cheeto-5751252a8950d__880.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  margin: 1em;
+  padding: 10px;
+  height: 350px;
+  display: flex;
+  border-radius: 10px;
+  align-items: end;
+  text-align: center;
+  justify-content: center;
+}
+
+section {
+  background-color: rgba(252, 254, 138, 0.336);
+  margin: 20px 100px 20px 100px;
+  padding: 20px 40px;
+  border-radius: 15px;
+}
+
+h2 {
+  text-align: start;
+}
+
+.story {
+  display: flex;
+  gap: 36px;
+  text-align: justify;
+}
+
+img {
+  width: 250px;
+  height: 250px;
+  box-shadow: 10px 5px 5px rgba(202, 204, 111, 0.438);
+  border-radius: 15px;
+}
+
+.text {
+  width: 100%;
+  line-height: 2;
+}
+
+footer {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  font-size: 20px;
+  font-family: "Ustroke";
+}
+
+footer :last-child {
+  color: #000000;
+}
+
+footer :last-child :hover {
+  background: linear-gradient(90deg, #6d33d92f, #fcfe8a31, #ed1e9031);
+  border-radius: 50px;
+  cursor: pointer;
+  padding: 6px;
+}
+
+.photo-container {
+  max-width: 380px;
+  min-width: 380px;
+  width: 100%;
+  margin: 20px auto;
+  position: relative;
+}
+
+.photo-container img {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2), 0 16px 20px rgba(0, 0, 0, 0.2);
+}
+
+.photo-container .photo-1 {
+  position: relative;
+  animation: rotateY1 10s linear infinite;
+  backface-visibility: hidden;
+}
+
+.photo-container .photo-2 {
+  position: absolute;
+  top: 0;
+  animation: rotateY2 10s linear infinite;
+  backface-visibility: hidden;
+}
+
+@keyframes rotateY1 {
+  0% {
+    transform: rotateY(-180deg);
+  }
+  40% {
+    transform: rotateY(-180deg);
+  }
+  50% {
+    transform: rotateY(0);
+  }
+  90% {
+    transform: rotateY(0);
+  }
+  100% {
+    transform: rotateY(180deg);
+  }
+}
+
+@keyframes rotateY2 {
+  0% {
+    transform: rotateY(0);
+  }
+  40% {
+    transform: rotateY(0);
+  }
+  50% {
+    transform: rotateY(180deg);
+  }
+  90% {
+    transform: rotateY(180deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
